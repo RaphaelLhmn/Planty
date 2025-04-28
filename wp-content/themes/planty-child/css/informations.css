@@ -1,0 +1,56 @@
+.formulaire-contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.formulaire-commande {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.formulaire-commande h3 {
+  color: var(--wp--preset--color--custom-blanc);
+}
+
+.formulaire-commande p {
+  margin: 30px 0 0 0;
+}
+
+.formulaire-commande input,
+.formulaire-contact input {
+  border-radius: 7px;
+  border: none;
+  height: 70px;
+  margin-top: 13px;
+  padding: 0 10px;
+}
+
+.formulaire-contact textarea {
+  border-radius: 7px;
+  border: none;
+  margin-top: 13px;
+  padding-top: 10px;
+  width: 100%;
+}
+
+.required-field {
+  color: var(--wp--preset--color--custom-rose);
+}
+
+.vos-informations-form {
+  padding-right: 61px;
+}
+
+.separateur-formulaire {
+  border-right: 0.01em solid;
+}
+
+.bouton-commander,
+.bouton-envoyer {
+  margin-top: 45px;
+  text-align: center;
+}
+
+
