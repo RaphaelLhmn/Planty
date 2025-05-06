@@ -5,7 +5,49 @@
  * Text Domain:	   planty-child
  * Description:    Hello Elementor is a lightweight and minimalist WordPress theme that was built specifically to work seamlessly with the Elementor site builder plugin. The theme is free, open-source, and designed for users who want a flexible, easy-to-use, and customizable website. The theme, which is optimized for performance, provides a solid foundation for users to build their own unique designs using the Elementor drag-and-drop site builder. Its simplicity and flexibility make it a great choice for both beginners and experienced Web Creators.
  */
+
+/*------header------*/
+.button_rencontrer {
+  order: 1;
+}
+
+.button_commander {
+  order: 3;
+}
+
+.button_admin {
+  order: 2;
+}
+
+span.elementor-button-text {
+  transition: transform 0.1s ease;
+}
+
+span.elementor-button-text:hover {
+  transform: translate(1px, -1px);
+  font-style: italic;
+}
+
+a.hfe-menu-item {
+  transition: transform 0.2s ease;
+}
+
+a.hfe-menu-item:hover {
+  transform: translate(1px, -1px);
+  font-style: italic;
+}
+
+.footer-inner {
+  transition: transform 0.2s ease;
+}
+
+.footer-inner:hover {
+  transform: translate(1px, -1px);
+  font-style: italic;
+}
+
 /*------Bouton admin------*/
+
 .admin-button {
   display: inline-block;
   padding: 10px 20px;
@@ -18,6 +60,7 @@
 }
 
 /*------Mise en forme des quantitées------*/
+
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -54,5 +97,3 @@ input[type="number"]::-webkit-inner-spin-button {
   font-weight: 400;
 }
 /*------responsive------*/
-
-

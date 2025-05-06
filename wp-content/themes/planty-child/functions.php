@@ -16,9 +16,10 @@ add_action( 'wp_enqueue_scripts', 'planty_child_style' );
  */
 
 /*--------Admin--------*/
+
 function planty_admin_button_in_menu($items, $args) {
     if (is_user_logged_in() && current_user_can('administrator') && $args->menu == 'main-menu') { 
-        $items .= '<li class="button_rencontrer menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-16 current_page_item parent hfe-creative-menu"><a href="' . admin_url() . '" class="admin-button">Admin</a></li>';
+        $items .= '<li class="button_admin menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-16 current_page_item parent hfe-creative-menu"><a href="' . admin_url() . '" class="hfe-menu-item">Admin</a></li>';
     }
     return $items;
 }
