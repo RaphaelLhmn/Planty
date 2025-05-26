@@ -74,7 +74,7 @@ input[type="number"]::-webkit-inner-spin-button {
   text-align: center;
 }
 
-/*------Mise en forme formulaire de commande*/
+/*------Mise en forme formulaire de commande------*/
 
 .ff-t-column-1 {
   width: 50%;
@@ -96,4 +96,376 @@ input[type="number"]::-webkit-inner-spin-button {
   font-size: 18px;
   font-weight: 400;
 }
-/*------responsive------*/
+
+#contact .ff-el-input--label label {
+  font-family: Syne;
+  color: black;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.fluentform {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/******responsive******/
+/* Import du thème parent */
+@import url("../parent-theme/style.css");
+
+/* Global: Réinitialisation et box-sizing */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Base pour mobile (≥320px) */
+body {
+  font-family: Syne, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Conteneur principal */
+.elementor-section,
+.elementor-container {
+  width: 100%;
+  max-width: 100%;
+  padding: 10px;
+}
+
+/* Images responsives */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Évite chevauchements */
+h1,
+h2,
+h3,
+p {
+  width: 100%;
+  max-width: 100%;
+  word-wrap: break-word;
+  margin-bottom: 10px;
+}
+
+/* Section "Nous rencontrer" */
+.rencontrer-section {
+  padding: 20px;
+  text-align: center;
+  background-color: #f5e9e2;
+  position: relative;
+}
+
+.rencontrer-section h1 {
+  font-size: 20px;
+  color: #ff5733;
+  margin-bottom: 10px;
+}
+
+.rencontrer-section p {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 20px;
+  width: 100%;
+  word-wrap: break-word;
+}
+
+.rencontrer-section img.fleur {
+  width: 50px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+/* Section "L’équipe" */
+.equipe-section {
+  padding: 20px;
+  text-align: center;
+}
+
+.equipe-section h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.equipe-section .elementor-widget-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.equipe-section .elementor-widget-wrap > div {
+  width: 100%;
+  max-width: 200px;
+}
+
+.equipe-section img {
+  width: 100%;
+  max-width: 150px;
+  border-radius: 50%;
+  margin: 0 auto 10px;
+}
+
+.equipe-section h3 {
+  font-size: 16px;
+  color: #000;
+  margin-bottom: 5px;
+}
+
+.equipe-section p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Section "Les goûts" */
+.gouts-section {
+  padding: 20px;
+  background-color: #ece2da;
+}
+
+.gouts-section h2 {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.gouts-section p {
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  width: 100%;
+  max-width: 100%;
+  word-wrap: break-word;
+  line-height: 1.4;
+}
+
+.gouts-section .elementor-widget-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.gouts-section .elementor-widget-wrap > div {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.gouts-section img {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.gouts-section h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  margin: 0;
+  padding: 5px 10px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  white-space: nowrap;
+}
+
+.gouts-section .elementor-button {
+  display: block;
+  width: 100%;
+  max-width: 150px;
+  margin: 20px auto;
+  padding: 10px;
+  font-size: 14px;
+  background-color: #ece2da;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Transitions générales */
+span.elementor-button-text,
+a.hfe-menu-item,
+.footer-inner {
+  transition: transform 0.2s ease;
+}
+
+span.elementor-button-text:hover,
+a.hfe-menu-item:hover,
+.footer-inner:hover {
+  transform: translate(1px, -1px);
+}
+
+/* Tablette (≥768px) */
+@media (min-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  .elementor-section,
+  .elementor-container {
+    padding: 20px;
+  }
+
+  .rencontrer-section h1 {
+    font-size: 24px;
+  }
+
+  .rencontrer-section p {
+    font-size: 16px;
+  }
+
+  .rencontrer-section img.fleur {
+    width: 70px;
+  }
+
+  .equipe-section h2 {
+    font-size: 24px;
+  }
+
+  .equipe-section .elementor-widget-wrap {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .equipe-section .elementor-widget-wrap > div {
+    width: 30%;
+    max-width: 250px;
+  }
+
+  .equipe-section img {
+    max-width: 200px;
+  }
+
+  .equipe-section h3 {
+    font-size: 18px;
+  }
+
+  .equipe-section p {
+    font-size: 16px;
+  }
+
+  .gouts-section h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  .gouts-section p {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  .gouts-section .elementor-widget-wrap {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .gouts-section .elementor-widget-wrap > div {
+    width: 45%;
+    max-width: 250px;
+  }
+
+  .gouts-section h3 {
+    font-size: 20px;
+  }
+
+  .gouts-section .elementor-button {
+    max-width: 200px;
+    font-size: 16px;
+  }
+}
+
+/* Desktop (≥1024px) */
+@media (min-width: 1024px) {
+  body {
+    font-size: 18px;
+  }
+
+  .elementor-section,
+  .elementor-container {
+    padding: 30px;
+  }
+
+  .rencontrer-section h1 {
+    font-size: 28px;
+  }
+
+  .rencontrer-section p {
+    font-size: 18px;
+  }
+
+  .rencontrer-section img.fleur {
+    width: 100px;
+    top: 30px;
+    left: 30px;
+  }
+
+  .equipe-section h2 {
+    font-size: 28px;
+  }
+
+  .equipe-section .elementor-widget-wrap > div {
+    width: 30%;
+    max-width: 300px;
+  }
+
+  .equipe-section img {
+    max-width: 250px;
+  }
+
+  .equipe-section h3 {
+    font-size: 20px;
+  }
+
+  .equipe-section p {
+    font-size: 18px;
+  }
+
+  .gouts-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .gouts-section p {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+
+  .gouts-section .elementor-widget-wrap > div {
+    width: 22%;
+    max-width: 300px;
+  }
+
+  .gouts-section h3 {
+    font-size: 22px;
+  }
+
+  .gouts-section .elementor-button {
+    max-width: 250px;
+    font-size: 18px;
+  }
+}
