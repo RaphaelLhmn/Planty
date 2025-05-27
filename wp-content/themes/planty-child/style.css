@@ -67,7 +67,7 @@ input[type="number"]::-webkit-inner-spin-button {
   margin: 0;
 }
 
-.numbers {
+.numbers1 numbers2 numbers3 numbers4 {
   border: none;
   height: 56px;
   width: 50px;
@@ -187,45 +187,23 @@ p {
 }
 
 /* Section "L’équipe" */
-.equipe-section {
-  padding: 20px;
-  text-align: center;
-}
 
-.equipe-section h2 {
-  font-size: 20px;
-  margin-bottom: 20px;
-  color: #000;
-}
+/* Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+  .equipe-section .elementor-widget-wrap {
+    flex-direction: column;
+    gap: 20px;
+  }
 
-.equipe-section .elementor-widget-wrap {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  align-items: center;
-}
+  .equipe-section .elementor-widget-wrap > div {
+    max-width: 150px; /* Réduit la taille sur mobile */
+  }
 
-.equipe-section .elementor-widget-wrap > div {
-  width: 100%;
-  max-width: 200px;
-}
-
-.equipe-section img {
-  width: 100%;
-  max-width: 150px;
-  border-radius: 50%;
-  margin: 0 auto 10px;
-}
-
-.equipe-section h3 {
-  font-size: 16px;
-  color: #000;
-  margin-bottom: 5px;
-}
-
-.equipe-section p {
-  font-size: 14px;
-  color: #666;
+  .equipe-section img {
+    max-width: 120px; /* Ajuste la taille de l’image */
+    padding: 10px;
+    text-align: center;
+  }
 }
 
 /* Section "Les goûts" */
