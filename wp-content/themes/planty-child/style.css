@@ -67,7 +67,7 @@ input[type="number"]::-webkit-inner-spin-button {
   margin: 0;
 }
 
-.numbers1 numbers2 numbers3 numbers4 {
+.numbers1, numbers2, numbers3, numbers4, {
   border: none;
   height: 56px;
   width: 50px;
@@ -122,14 +122,13 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 /* Base pour mobile (≥320px) */
-body {
   font-family: Syne, sans-serif;
   font-size: 14px;
   line-height: 1.5;
   width: 100%;
   max-width: 100%;
   overflow-x: hidden;
-}
+  }
 
 /* Conteneur principal */
 .elementor-section,
@@ -445,5 +444,53 @@ a.hfe-menu-item:hover,
   .gouts-section .elementor-button {
     max-width: 250px;
     font-size: 18px;
+  }
+}
+
+/* Ordre des éléments */
+/* Mobile (max-width: 768px) */
+
+@media (max-width: 768px) {
+.fraise {
+  order: 1; /* Fraise en premier */
+}
+.numbers1 {
+  order: 2; /* Compteur de fraise juste après */
+}
+.pamplemousse {
+  order: 3; /* Pamplemousse en deuxième */
+}
+.numbers2 {
+  order: 4; /* Compteur de pamplemousse juste après */
+}
+.framboise {
+  order: 5; /* Framboise en troisième */
+}
+.numbers3 {
+  order: 6; /* Compteur de framboise juste après */
+}
+.citron {
+  order: 7; /* Citron en dernier */
+}
+.numbers4 {
+  order: 8; /* Compteur de citron juste après */
+}
+
+/* Responsive mobile (max-width: 768px) */
+@media (max-width: 768px) {
+  .ff-t-container {
+    flex-direction: column; /* Empile les colonnes */
+  }
+
+  .ff-t-column-1, .ff-t-column-2 {
+    width: 100%; /* Pleine largeur */
+    padding-left: 20px; /* Réduit les padding sur mobile */
+    padding-right: 20px;
+    border-right: none; /* Supprime le séparateur */
+    margin-bottom: 20px; /* Espacement entre sections */
+  }
+
+  .ff-t-column-2 {
+    padding-left: 20px; /* Uniformise les padding */
   }
 }
